@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">	
+	
+	<!-- Form Creation -->
+	<form method="get" enctype="application/x-www-form-urlencoded" action="/html/codes/html_form_handler.cfm">
+
+	<p>
+	<label>Instructor Name
+	<input type="text" name="professor_name" required>
+	</label> 
+	</p>
+
+	<p>
+	<label>SUBR Email 
+	<input type="email" name="email_address">
+	</label>
+	</p>
+
+	<fieldset>
+	<legend>Which Room Do You Require?</legend>
+	<p><label> <input type="radio" name="room" required value="201"> 201 </label></p>
+	<p><label> <input type="radio" name="room" required value="201"> 202 </label></p>
+	<p><label> <input type="radio" name="room" required value="201"> 203 </label></p>
+	<p><label> <input type="radio" name="room" required value="201"> 204 </label></p>
+	<p><label> <input type="radio" name="room" required value="201"> 205 </label></p>
+	<p><label> <input type="radio" name="room" required value="201"> 206 </label></p>
+	<p><label> <input type="radio" name="room" required value="201"> 207 </label></p>
+	<p><label> <input type="radio" name="room" required value="201"> 208 </label></p>
+	<p><label> <input type="radio" name="room" required value="201"> 209 </label></p>
+	<p><label> <input type="radio" name="room" required value="201"> 210 </label></p>
+	</fieldset>
+
+	<p>
+	<label>Lecture Start Date/Time
+	<input type="datetime-local" name="pickup_time" required>
+	</label>
+	</p>
+	
+	<p>
+	<label>Lecture Title
+	<input type="text" name="course_title" required list="cmps_courses">
+	</label>
+	
+	<datalist id="cmps_courses">
+	<option value="Database Management">
+	<option value="Freshman Seminar I">
+	<option value="Freshman Seminar II">
+	<option value="Programming Languages">
+	<option value="Introduction to Computer Technology">
+	<option value="Introduction to Computer Concepts">
+	<option value="Department Comprehensive">
+	<option value="Programming Techniques And Algorithm Development I">
+	<option value="Programming Techniques And Algorithm Development II">
+	<option value="Discrete Structures">
+	<option value="Data Structures">
+	<option value="Java Programming">
+	<option value="Microcomputer Applications In Business">
+	<option value="Advance Techniques Using Spreadsheets">
+	<option value="Computer Organization">
+	<option value="Social Networking">
+	<option value="Game Programming">
+	<option value="Digital Data Networks">
+	<option value="Practical Experience II">
+	<option value="Web-Based Programming">
+	<option value="Cyber Forensics">
+	<option value="Scientific Programming">
+	<option value="Computers, Inform, And Society">
+	<option value="Object Oriented Programming">
+	<option value="Cloud Computing">
+	<option value="Software Engineering">
+	<option value="Legal Issues in Inform Tech">
+	<option value="Mobile Client Development">
+	<option value="Mobil Deployment">
+	<option value="Operating Systems">
+	<option value="Computer Architecture">
+	<option value="Numerical Methods">
+	<option value="Theory of Computing">
+	<option value="System Analysis And Design">
+	<option value="Database Management">
+	<option value="Network Security Fundamentals">
+	<option value="Capstone Project Phase I">
+	<option value="Capstone Project Phase II">
+	<option value="Special Projects">
+	<option value="Disaster Recovery">
+	<option value="Theory of Computing">
+	<option value="Robotics">
+	<option value="Artificial Intelligence">
+	<option value="Telecommunications">
+	<option value="Computer Animation">
+	<option value="Java Programming">
+	</datalist>
+	</p>
+	
+	<p>
+	<label>Building Name
+	<select id="lecture_location" name="lecture_location">
+	<option value="" selected="selected">Select One</option>
+	<option value="cmps" >Henry Thurman - CMPS</option>
+	<option value="mgmt" >T.T. Allain</option>
+	<option value="other" >Other</option>
+	</select>
+	</label> 
+	</p>
+
+	<p>
+	<label>Special Requests/Instructions
+	<textarea name="comments" maxlength="500"></textarea>
+	</label>
+	</p>
+
+	<p><button>Submit Booking</button></p>
+
+	</form>
+	
+</html>
